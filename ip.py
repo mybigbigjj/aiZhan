@@ -44,7 +44,7 @@ def dom(w):
                     return i
 
 
-def aiZan(domain_url):
+def aiZhan(domain_url):
     """测试百度权重"""
     Private = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'  #爱站私钥
 
@@ -74,4 +74,4 @@ if __name__ == "__main__":
 
     list2 = list(set(url_list))  #将取出的url写入url_list中并去除重复域名
     for n in list2:
-        aiZan(n)
+        aiZhan(n)
