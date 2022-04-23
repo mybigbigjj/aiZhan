@@ -8,7 +8,7 @@ import requests
 def get_iplist():
     """获取文件中的url"""
     iplist = []
-    with open("c:/Users/陆仁霖/Desktop/programming/python/aizain/url.txt", 'r') as file:   
+    with open("url.txt", 'r') as file:   
         data = file.readlines()
         for item in data:
             ip = item.strip()
@@ -46,9 +46,9 @@ def dom(w):
 
 def aiZan(domain_url):
     """测试百度权重"""
-    Private = 'ce1246e0d403c066fe1f5b6d07e526b5?domains='  #爱站私钥
+    Private = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'  #爱站私钥
 
-    url = 'https://apistore.aizhan.com/baidurank/siteinfos/'+Private+domain_url
+    url = 'https://apistore.aizhan.com/baidurank/siteinfos/'+Private+'?domains='+domain_url
     txt =  requests.get(url).text #str 
     baidu = txt.split("\"")
     try:
